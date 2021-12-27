@@ -8,3 +8,4 @@ Provided Toolheads:
 - Phaetus BMO/BMS
 - E3D revo micro
 - E3D v6
+- Phaetus Rapido
