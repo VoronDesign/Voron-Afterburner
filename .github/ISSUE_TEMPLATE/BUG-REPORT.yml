@@ -18,7 +18,7 @@ body:
     validations:
       required: true
     attributes:
-      label: STL/Model file or files affected
+      label: STL/Model file/s affected
       description: List each STL/Model that is affected
       placeholder: |
         [a]_latch-beta0.stl
