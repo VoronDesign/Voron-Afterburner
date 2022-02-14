@@ -139,13 +139,13 @@ As with any beta release, the provided STLs and manuals are not final, and we as
 \- `/Stealthburner/[c]_stealthburner_LED_diffuser-beta2.stl`<br>
 \- `/Stealthburner/[o]_stealthburner_LED_diffuser-mask-beta0.stl`<br>
 
-> **Major Changes:**
+> **Major Changes:**<br>
 >* added chamfers (a) to `main_body` diffuser cavity entrance to make getting that little >guy in there much easier.
 >* created slightly more clearance to `diffuser`/`mask` mating surfaces.
 >* added chamfer to print surface (b) of `diffuser_mask` to battle elephants foot.
 >* added chamfers (c) to `diffuser` to help with printing and assembling.
 >>
->  **Minor Changes:**
+>  **Minor Changes:**<br>
 > - removed a strange little polygon artifact from the bottom of `main_body` (d).
 
 <br>
