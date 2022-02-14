@@ -4,6 +4,7 @@ ___
 - [Introduction](#introduction)
 - [Filename Nomenclature](#filename-nomenclature)
 - [CHANGE LOG: *(Detailing significant changes)*](#change-log-detailing-significant-changes)
+  - [2022-02-14 - Minor adjustments to ADXL mounts #87](#2022-02-14---minor-adjustments-to-adxl-mounts-87)
   - [2022-02-14 - Stealthburner ADXL Support and toolhead updates #86](#2022-02-14---stealthburner-adxl-support-and-toolhead-updates-86)
   - [2022-02-01 - Revised stealthburner_leds.cfg #80](#2022-02-01---revised-stealthburner_ledscfg-80)
   - [2022-02-01 - Stealthburner diffuser and mask updates #79](#2022-02-01---stealthburner-diffuser-and-mask-updates-79)
@@ -47,6 +48,27 @@ As with any beta release, the provided STLs and manuals are not final, and we as
 <br>
 
 # CHANGE LOG: *(Detailing significant changes)*
+
+<br>
+
+## 2022-02-14 - Minor adjustments to ADXL mounts [#87](https://github.com/VoronDesign/Voron-Afterburner/pull/87)
+**Affected Files:**<br>
+
+\~ `/Stealthburner/ADXL345_Mounts/sb_adxl_washer-beta0.stl`<br>
+
+\+ `/Stealthburner/ADXL345_Mounts/sb_adxl_mount_adafruit_19mm_c-c.stl-beta1`<br>
+\+ `/Stealthburner/ADXL345_Mounts/sb_adxl_mount_generic_15.5mm_c-c.stl-beta1`<br>
+\+ `/Stealthburner/ADXL345_Mounts/sb_adxl_mount_ldo_15mm_c-c.stl-beta1`<br>
+\+ `/Stealthburner/ADXL345_Mounts/sb_adxl_washer-beta1.stl`<br>
+
+\+ `/Stealthburner/ADXL345_Mounts/sb_adxl_mount_adafruit_19mm_c-c.stl`<br>
+\+ `/Stealthburner/ADXL345_Mounts/sb_adxl_mount_generic_15.5mm_c-c.stl`<br>
+\+ `/Stealthburner/ADXL345_Mounts/sb_adxl_mount_ldo_15mm_c-c.stl`<br>
+
+> **Minor Changes:**
+> * Shortened ADXL mounting area height to allow for more thread engagement.  (Thanks HackerJack42)
+> * Slightly adjusted profile of ADXL mounts to make the design flow better.
+> * Renamed ADXL mounts to match the rest of the Beta components.
 
 <br>
 
