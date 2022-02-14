@@ -4,6 +4,7 @@ ___
 - [Introduction](#introduction)
 - [Filename Nomenclature](#filename-nomenclature)
 - [CHANGE LOG: *(Detailing significant changes)*](#change-log-detailing-significant-changes)
+  - [2022-02-14 - Stealthburner ADXL Support and toolhead updates #86](#2022-02-14---stealthburner-adxl-support-and-toolhead-updates-86)
   - [2022-02-01 - Revised stealthburner_leds.cfg #80](#2022-02-01---revised-stealthburner_ledscfg-80)
   - [2022-02-01 - Stealthburner diffuser and mask updates #79](#2022-02-01---stealthburner-diffuser-and-mask-updates-79)
   - [2022-01-27 - Major updates for Stealthburner #76](#2022-01-27---major-updates-for-stealthburner-76)
@@ -46,6 +47,75 @@ As with any beta release, the provided STLs and manuals are not final, and we as
 <br>
 
 # CHANGE LOG: *(Detailing significant changes)*
+
+<br>
+
+## 2022-02-14 - Stealthburner ADXL Support and toolhead updates [#86](https://github.com/VoronDesign/Voron-Afterburner/pull/86)
+**Affected Files:**<br>
+\~ `/Stealthburner/Toolheads/README.md`<br>
+
+\+ `/Stealthburner/Toolheads/phaetus_bmo/stealthburner_toolhead_(phaetus_bmo)-front-beta2.stl`<br>
+\+ `/Stealthburner/Toolheads/phaetus_bmo/stealthburner_toolhead_(phaetus_bmo)-rear-cw1-beta2.stl`<br>
+\+ `/Stealthburner/Toolheads/phaetus_bmo/stealthburner_toolhead_(phaetus_bmo)-rear-cw2-beta2.stl`<br>
+\+ `/Stealthburner/Toolheads/phaetus_bms/stealthburner_toolhead_(phaetus_bms6)-front-beta3.stl`<br>
+\+ `/Stealthburner/Toolheads/phaetus_bms/stealthburner_toolhead_(phaetus_bms6)-rear-cw1-beta3.stl`<br>
+\+ `/Stealthburner/Toolheads/phaetus_bms/stealthburner_toolhead_(phaetus_bms6)-rear-cw2-beta3.stl`<br>
+\+ `/Stealthburner/Toolheads/phaetus_bms/stealthburner_toolhead_(phaetus_bms7)-front-beta3.stl`<br>
+\+ `/Stealthburner/Toolheads/phaetus_bms/stealthburner_toolhead_(phaetus_bms7)-rear-cw1-beta3.stl`<br>
+\+ `/Stealthburner/Toolheads/phaetus_bms/stealthburner_toolhead_(phaetus_bms7)-rear-cw2-beta3.stl`<br>
+\+ `/Stealthburner/Toolheads/phaetus_dragon/stealthburner_toolhead_(dragon)-front-beta3.stl`<br>
+\+ `/Stealthburner/Toolheads/phaetus_dragon/stealthburner_toolhead_(dragon)-rear-cw1-beta2.stl`<br>
+\+ `/Stealthburner/Toolheads/phaetus_dragon/stealthburner_toolhead_(dragon)-rear-cw2-beta2.stl`<br>
+\+ `/Stealthburner/Toolheads/phaetus_rapido/stealthburner_toolhead_(rapido)-front-beta4.stl`<br>
+\+ `/Stealthburner/Toolheads/phaetus_rapido/stealthburner_toolhead_(rapido)-rear-cw1-beta3.stl`<br>
+\+ `/Stealthburner/Toolheads/phaetus_rapido/stealthburner_toolhead_(rapido)-rear-cw2-beta3.stl`<br>
+\+ `/Stealthburner/Toolheads/revo_micro/stealthburner_toolhead_(revo_micro)-front-beta2.stl`<br>
+\+ `/Stealthburner/Toolheads/revo_micro/stealthburner_toolhead_(revo_micro)-rear-cw1-beta1.stl`<br>
+\+ `/Stealthburner/Toolheads/revo_micro/stealthburner_toolhead_(revo_micro)-rear-cw2-beta1.stl`<br>
+\+ `/Stealthburner/Toolheads/revo_six_&_v6/stealthburner_toolhead_(v6)-front-beta3.stl`<br>
+\+ `/Stealthburner/Toolheads/revo_six_&_v6/stealthburner_toolhead_(v6)-rear-cw1-beta3.stl`<br>
+\+ `/Stealthburner/Toolheads/revo_six_&_v6/stealthburner_toolhead_(v6)-rear-cw2-beta3.stl`<br>
+\+ `/Stealthburner/Toolheads/revo_voron/stealthburner_toolhead_(revo_voron)-front-beta0.stl`<br>
+\+ `/Stealthburner/Toolheads/revo_voron/stealthburner_toolhead_(revo_voron)-rear-cw1-beta0.stl`<br>
+\+ `/Stealthburner/Toolheads/revo_voron/stealthburner_toolhead_(revo_voron)-rear-cw2-beta0.stl`<br>
+\+ `/Stealthburner/ADXL345_Mounts/sb_adxl_mount_adafruit_19mm_c-c.stl`<br>
+\+ `/Stealthburner/ADXL345_Mounts/sb_adxl_mount_generic_15.5mm_c-c.stl`<br>
+\+ `/Stealthburner/ADXL345_Mounts/sb_adxl_mount_ldo_15mm_c-c.stl`<br>
+\+ `/Stealthburner/ADXL345_Mounts/sb_adxl_washer.stl`<br>
+
+\- `/Stealthburner/Toolheads/phaetus_bmo/stealthburner_toolhead_(phaetus_bmo)-front-beta1.stl`<br>
+\- `/Stealthburner/Toolheads/phaetus_bmo/stealthburner_toolhead_(phaetus_bmo)-rear-cw1-beta1.stl`<br>
+\- `/Stealthburner/Toolheads/phaetus_bmo/stealthburner_toolhead_(phaetus_bmo)-rear-cw2-beta1.stl`<br>
+\- `/Stealthburner/Toolheads/phaetus_bms/stealthburner_toolhead_(phaetus_bms6)-front-beta2.stl`<br>
+\- `/Stealthburner/Toolheads/phaetus_bms/stealthburner_toolhead_(phaetus_bms6)-rear-cw1-beta2.stl`<br>
+\- `/Stealthburner/Toolheads/phaetus_bms/stealthburner_toolhead_(phaetus_bms6)-rear-cw2-beta2.stl`<br>
+\- `/Stealthburner/Toolheads/phaetus_bms/stealthburner_toolhead_(phaetus_bms7)-front-beta2.stl`<br>
+\- `/Stealthburner/Toolheads/phaetus_bms/stealthburner_toolhead_(phaetus_bms7)-rear-cw1-beta2.stl`<br>
+\- `/Stealthburner/Toolheads/phaetus_bms/stealthburner_toolhead_(phaetus_bms7)-rear-cw2-beta2.stl`<br>
+\- `/Stealthburner/Toolheads/phaetus_dragon/stealthburner_toolhead_(dragon)-front-beta2.stl`<br>
+\- `/Stealthburner/Toolheads/phaetus_dragon/stealthburner_toolhead_(dragon)-rear-cw1-beta1.stl`<br>
+\- `/Stealthburner/Toolheads/phaetus_dragon/stealthburner_toolhead_(dragon)-rear-cw2-beta1.stl`<br>
+\- `/Stealthburner/Toolheads/phaetus_rapido/stealthburner_toolhead_(rapido)-front-beta3.stl`<br>
+\- `/Stealthburner/Toolheads/phaetus_rapido/stealthburner_toolhead_(rapido)-rear-cw1-beta2.stl`<br>
+\- `/Stealthburner/Toolheads/phaetus_rapido/stealthburner_toolhead_(rapido)-rear-cw2-beta2.stl`<br>
+\- `/Stealthburner/Toolheads/revo_micro/stealthburner_toolhead_(revo_micro)-front-beta1.stl`<br>
+\- `/Stealthburner/Toolheads/revo_micro/stealthburner_toolhead_(revo_micro)-rear-cw1-beta0.stl`<br>
+\- `/Stealthburner/Toolheads/revo_micro/stealthburner_toolhead_(revo_micro)-rear-cw2-beta0.stl`<br>
+\- `/Stealthburner/Toolheads/revo_six_&_v6/stealthburner_toolhead_(v6)-front-beta2.stl`<br>
+\- `/Stealthburner/Toolheads/revo_six_&_v6/stealthburner_toolhead_(v6)-rear-cw1-beta2.stl`<br>
+\- `/Stealthburner/Toolheads/revo_six_&_v6/stealthburner_toolhead_(v6)-rear-cw2-beta2.stl`<br>
+
+
+> **Major Changes:**
+> Added `revo_voron` toolhead in preperation for upcoming release!
+> `dragon_front` hotend duct has been revised to alleviate heatcreep issues in certain situations while printing PLA.
+> All toolhead front sections now come with integrated mounting points for ADXL345 sensors for Input Shaping.  Choose mount you need from the new `ADXL345_Mounts` folder.
+> ADXL345 mounts have been added. Mounts for LDO, Adafruit, and most generic sensors included.
+> All toolheads now include revised M3x50mm screw extraction feature which should eliminate an gaps between the toolhead and the carriage when installing a toolhead for the first time. (Thank you to everyone who printed any of the 19 test pieces and offered feedback!)
+> 
+>  **Minor Changes:**
+> `rapido_rear` rear has been revised to allevaite fastener interference with Omron probes.
+> Toolhead STL Readme updated to include E3D Revo Voron.
 
 <br>
 
