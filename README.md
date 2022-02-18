@@ -6,6 +6,7 @@
 - [Introduction](#introduction)
 - [Filename Nomenclature](#filename-nomenclature)
 - [CHANGE LOG: *(Detailing significant changes)*](#change-log-detailing-significant-changes)
+  - [2022-02-18 - Clockwork 2 body and latch updates #93](#2022-02-18---clockwork-2-body-and-latch-updates-93)
   - [2022-02-14 - BMO and BMS toolhead patch #89](#2022-02-14---bmo-and-bms-toolhead-patch-89)
   - [2022-02-14 - Minor adjustments to ADXL mounts #88](#2022-02-14---minor-adjustments-to-adxl-mounts-88)
   - [2022-02-14 - Stealthburner ADXL Support and toolhead updates #86](#2022-02-14---stealthburner-adxl-support-and-toolhead-updates-86)
@@ -52,6 +53,33 @@ As with any beta release, the provided STLs and manuals are not final, and we as
 
 # CHANGE LOG: *(Detailing significant changes)*
 
+## 2022-02-18 - Clockwork 2 body and latch updates [#93](https://github.com/VoronDesign/Voron-Afterburner/pull/93)
+
+**Affected Files:**<br>
+
+\- `/Clockwork2/[a]_latch-beta2.stl`<br>
+\- `/Clockwork2/[a]_latch(long)-beta0.stl`<br>
+\- `/Clockwork2/main_body-beta7.stl`<br>
+\- `/Clockwork2/motor_plate_beta5.stl`<br>
+
+\- `/Clockwork2/[a]_latch-beta1.stl`<br>
+\- `/Clockwork2/main_body-beta6.stl`<br>
+\- `/Clockwork2/motor_plate_beta4.stl`<br>
+
+<br>
+
+> **Major Changes:**
+> * Beefed the `main_body` around the driveshaft bearing to better support the bearing.
+> * Reduced size of bearing bore diameter on `main_body` to improve bearing fitment. 
+> * Added mounting holes for toolhead PCB locations based on Hartk's revised PCB design on `main_body` and `motor_plate`
+> * Revised `latch` profile to give some addtional flex to the latch to make locking it easier.
+> * Added an additional "extended" version of the `latch` to make it easier to unlatch.  Please try out both and provide feedback in Discord.
+>
+> **Minor Changes:**
+>
+> * Adjusted counter bore depths on `main_body` to make bolt head depth more consistent.
+
+<br>
 
 ## 2022-02-14 - BMO and BMS toolhead patch [#89](https://github.com/VoronDesign/Voron-Afterburner/pull/89)
 
