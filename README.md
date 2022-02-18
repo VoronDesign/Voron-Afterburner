@@ -69,7 +69,8 @@ As with any beta release, the provided STLs and manuals are not final, and we as
 <br>
 
 > **Major Changes:**
->
+> * Beefed the `main_body` around the driveshaft bearing to better support the bearing.
+> * Reduced size of bearing bore diameter on `main_body` to improve bearing fitment. 
 > * Added mounting holes for toolhead PCB locations based on Hartk's revised PCB design on `main_body` and `motor_plate`
 > * Revised `latch` profile to give some addtional flex to the latch to make locking it easier.
 > * Added an additional "extended" version of the `latch` to make it easier to unlatch.  Please try out both and provide feedback in Discord.
