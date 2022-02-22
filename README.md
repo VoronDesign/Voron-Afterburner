@@ -57,10 +57,10 @@ As with any beta release, the provided STLs and manuals are not final, and we as
 
 **Affected Files:**<br>
 
-\- `/Clockwork2/[a]_latch-beta2.stl`<br>
-\- `/Clockwork2/[a]_latch(long)-beta0.stl`<br>
-\- `/Clockwork2/main_body-beta7.stl`<br>
-\- `/Clockwork2/motor_plate_beta5.stl`<br>
+\+ `/Clockwork2/[a]_latch-beta2.stl`<br>
+\+ `/Clockwork2/[a]_latch(long)-beta0.stl`<br>
+\+ `/Clockwork2/main_body-beta7.stl`<br>
+\+ `/Clockwork2/motor_plate_beta5.stl`<br>
 
 \- `/Clockwork2/[a]_latch-beta1.stl`<br>
 \- `/Clockwork2/main_body-beta6.stl`<br>
