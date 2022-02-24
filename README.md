@@ -6,6 +6,7 @@
 - [Introduction](#introduction)
 - [Filename Nomenclature](#filename-nomenclature)
 - [CHANGE LOG: *(Detailing significant changes)*](#change-log-detailing-significant-changes)
+  - [2022-02-24 - CW2 Extruder Gear Mesh Adjustment Screw #100](#2022-02-24---cw2-extruder-gear-mesh-adjustment-screw-100)
   - [2022-02-18 - Clockwork 2 body and latch updates #93](#2022-02-18---clockwork-2-body-and-latch-updates-93)
   - [2022-02-14 - BMO and BMS toolhead patch #89](#2022-02-14---bmo-and-bms-toolhead-patch-89)
   - [2022-02-14 - Minor adjustments to ADXL mounts #88](#2022-02-14---minor-adjustments-to-adxl-mounts-88)
@@ -53,6 +54,49 @@ As with any beta release, the provided STLs and manuals are not final, and we as
 
 # CHANGE LOG: *(Detailing significant changes)*
 
+<br>
+
+## 2022-02-24 - CW2 Extruder Gear Mesh Adjustment Screw [#100](https://github.com/VoronDesign/Voron-Afterburner/pull/100)
+
+**Affected Files:**<br>
+
+\+ `/Clockwork2/main_body-beta8.stl`<br>
+\+ `/Clockwork2/motor_plate_beta6.stl`<br>
+\+ `/Clockwork2/[a]_guidler_a-beta5.stl`<br>
+\+ `/Clockwork2/[a]_guidler_b-beta5.stl`<br>
+\+ `/Stealthburner/ADXL345_Mounts/sb_adxl_mount_adafruit-LIS3DH-beta0.stl`<br>
+\+ `/Stealthburner/ADXL345_Mounts/sb_adxl_mount_sparkfun-LIS3DH-beta0.stl`<br>
+
+\- `/Clockwork2/main_body-beta7.stl`<br>
+\- `/Clockwork2/motor_plate_beta5.stl`<br>
+\- `/Clockwork2/[a]_guidler_a-beta4.stl`<br>
+\- `/Clockwork2/[a]_guidler_b-beta4.stl`<br>
+
+> **CW2 - Added Adjustment screw for extruder gear minimum C - C distance**
+> Due to the wide variances we're seeing in manufacturing tolerances and specs on the extruder gears, tension screws, and tension springs, changes that were made some time ago to allow for greater tension were causing some users on the other end of the spectrum issues with gear-binding, etc.  So I dreamed up a way to try and kill a few birds with 1 stone.
+> **Major Changes**
+>
+> - Added adjustment screw to `main_body` under the `shuttle` that allows for adjustment of the extruder gear minimum center to center distance.  M3x6 BHCS must be use here.  Do not substitute with SHCS.
+> - Shuffled a few things around on `guidler_a` and `guidler_b` to accomodate a slot to adjust the min. c-c screw.
+> - Revised dovetail interface on `guidler_a` and `guidler_b` to make tab less delicate.
+> - Revised interlock profile under latch on `main_body` and `motor_plate` to give more material and prevent that little thing from snapping off too easily.
+> - Added a clearance cutout for 50T gear on `motor_plate`
+>
+> **Other Updates**
+>
+> - Added ADXL mount for Adafruit LIS3DH sensor
+> - Added ADXL mount for Sparkfun LIS3DH sensor
+
+
+
+![image](https://user-images.githubusercontent.com/34219833/155484746-fd3ebe8b-fb63-4732-93e6-a2b54ff8adbc.png)
+
+![image](https://user-images.githubusercontent.com/34219833/155485317-0c7b112d-fd0b-4305-9aef-470b9f6821fe.png)
+
+![image](https://user-images.githubusercontent.com/34219833/155485575-1dac2de1-e8ad-499a-9e59-d133a7b06a4b.png)
+
+<br>
+
 ## 2022-02-18 - Clockwork 2 body and latch updates [#93](https://github.com/VoronDesign/Voron-Afterburner/pull/93)
 
 **Affected Files:**<br>
@@ -64,20 +108,19 @@ As with any beta release, the provided STLs and manuals are not final, and we as
 
 \- `/Clockwork2/[a]_latch-beta1.stl`<br>
 \- `/Clockwork2/main_body-beta6.stl`<br>
-\- `/Clockwork2/motor_plate_beta4.stl`<br>
-
-<br>
+\- `/Clockwork2/motor_plate_beta4.stl`
 
 > **Major Changes:**
-> * Beefed the `main_body` around the driveshaft bearing to better support the bearing.
-> * Reduced size of bearing bore diameter on `main_body` to improve bearing fitment. 
-> * Added mounting holes for toolhead PCB locations based on Hartk's revised PCB design on `main_body` and `motor_plate`
-> * Revised `latch` profile to give some addtional flex to the latch to make locking it easier.
-> * Added an additional "extended" version of the `latch` to make it easier to unlatch.  Please try out both and provide feedback in Discord.
+>
+> - Beefed the `main_body` around the driveshaft bearing to better support the bearing.
+> - Reduced size of bearing bore diameter on `main_body` to improve bearing fitment.
+> - Added mounting holes for toolhead PCB locations based on Hartk's revised PCB design on `main_body` and `motor_plate`
+> - Revised `latch` profile to give some addtional flex to the latch to make locking it easier.
+> - Added an additional "extended" version of the `latch` to make it easier to unlatch.  Please try out both and provide feedback in Discord.
 >
 > **Minor Changes:**
 >
-> * Adjusted counter bore depths on `main_body` to make bolt head depth more consistent.
+> - Adjusted counter bore depths on `main_body` to make bolt head depth more consistent.
 
 <br>
 
@@ -99,8 +142,8 @@ As with any beta release, the provided STLs and manuals are not final, and we as
 
 > **Minor Changes:**
 >
-> * Corrected a missing through-hole in the `BMO toolhead front`
-> * Corrected thin features on toolhead rear sections of `BMS6` & `BMS7`
+> - Corrected a missing through-hole in the `BMO toolhead front`
+> - Corrected thin features on toolhead rear sections of `BMS6` & `BMS7`
 
 <br>
 
@@ -121,9 +164,9 @@ As with any beta release, the provided STLs and manuals are not final, and we as
 
 > **Minor Changes:**
 >
-> * Shortened ADXL mounting area height to allow for more thread engagement.  (Thanks HackerJack42)
-> * Slightly adjusted profile of ADXL mounts to make the design flow better.
-> * Renamed ADXL mounts to match the rest of the Beta components.
+> - Shortened ADXL mounting area height to allow for more thread engagement.  (Thanks HackerJack42)
+> - Slightly adjusted profile of ADXL mounts to make the design flow better.
+> - Renamed ADXL mounts to match the rest of the Beta components.
 
 <br>
 
@@ -219,10 +262,10 @@ As with any beta release, the provided STLs and manuals are not final, and we as
 
 > **Major Changes:**<br>
 >
-> * added chamfers (a) to `main_body` diffuser cavity entrance to make getting that little >guy in there much easier.
-> * created slightly more clearance to `diffuser`/`mask` mating surfaces.
-> * added chamfer to print surface (b) of `diffuser_mask` to battle elephants foot.
-> * added chamfers (c) to `diffuser` to help with printing and assembling.
+> - added chamfers (a) to `main_body` diffuser cavity entrance to make getting that little >guy in there much easier.
+> - created slightly more clearance to `diffuser`/`mask` mating surfaces.
+> - added chamfer to print surface (b) of `diffuser_mask` to battle elephants foot.
+> - added chamfers (c) to `diffuser` to help with printing and assembling.
 >
 > **Minor Changes:**<br>
 >
@@ -334,10 +377,10 @@ As with any beta release, the provided STLs and manuals are not final, and we as
 >
 > **Changes:**
 >
-> * Guidler A and B update to allow for more travel (more filament engagement/tension).
-> * Idler shaft area has additional support material added to deflection when pushing extruder to more extreme extrusion levels.
-> * Main Body was updated to accommodate additional travel.
-> * Switchwire X Frame update to allow more clearance for probe. (Thanks Steve)
+> - Guidler A and B update to allow for more travel (more filament engagement/tension).
+> - Idler shaft area has additional support material added to deflection when pushing extruder to more extreme extrusion levels.
+> - Main Body was updated to accommodate additional travel.
+> - Switchwire X Frame update to allow more clearance for probe. (Thanks Steve)
 
 <br>
 
@@ -352,8 +395,8 @@ As with any beta release, the provided STLs and manuals are not final, and we as
 
 > **Fixes:**
 >
-> * Added missing air-bleed ports for Dragon toolhead front.
-> * Fixed hotend fan flow-straightener vane on Rapido toolhead front.
+> - Added missing air-bleed ports for Dragon toolhead front.
+> - Fixed hotend fan flow-straightener vane on Rapido toolhead front.
 
 <br>
 
@@ -384,9 +427,9 @@ As with any beta release, the provided STLs and manuals are not final, and we as
 >
 > **Changes:**
 >
-> * V6/R6 toolhead cutout has been revised to optimize airflow across lower portion of heatsink and no long forces heat higher up the heatsink.
-> * Dragon toolhead has had the nozzle height corrected.  It was roughly 1.4mm too high.
-> * Rapido toolhead mounting bolt pattern has been rotated 12° to orient the metal strain-relief tab better.  Also added a tiny bit more clearance for strain-relief zip-tie.
+> - V6/R6 toolhead cutout has been revised to optimize airflow across lower portion of heatsink and no long forces heat higher up the heatsink.
+> - Dragon toolhead has had the nozzle height corrected.  It was roughly 1.4mm too high.
+> - Rapido toolhead mounting bolt pattern has been rotated 12° to orient the metal strain-relief tab better.  Also added a tiny bit more clearance for strain-relief zip-tie.
 
 <br>
 
@@ -428,23 +471,23 @@ As with any beta release, the provided STLs and manuals are not final, and we as
 
 > **Stealthburner Updates:**
 >
-> * Re-centered 5015 inlet to undo previous bad decision :)   (Delta and GDSTIME fans are perfectly centered)
-> * Added a tiny bit of additional wiring clearance for 4014 fan wiring
-> * Completely redesigned nozzle-nozzle LED wiring channel to give added strength to main body mounting screw locations
-> * Made a couple of changes to 4010 fan area to ease fan installation
-> * Tweaked bridging for upper wire retainer
+> - Re-centered 5015 inlet to undo previous bad decision :)   (Delta and GDSTIME fans are perfectly centered)
+> - Added a tiny bit of additional wiring clearance for 4014 fan wiring
+> - Completely redesigned nozzle-nozzle LED wiring channel to give added strength to main body mounting screw locations
+> - Made a couple of changes to 4010 fan area to ease fan installation
+> - Tweaked bridging for upper wire retainer
 >
 > **Toolhead Changes:**
 >
-> * Added Phaetus Rapido toolhead
-> * Fixed type on BMS toolhead
-> * Split BMS toolhead up into 6 and 7 fin designs which should now support Zodiac version as well
-> * Re-organized toolheads into sub-folders to make selecting the correct files easier
-> * Updated Readme.md to be more helpful and supportive (thanks for the help Timmit!)
+> - Added Phaetus Rapido toolhead
+> - Fixed type on BMS toolhead
+> - Split BMS toolhead up into 6 and 7 fin designs which should now support Zodiac version as well
+> - Re-organized toolheads into sub-folders to make selecting the correct files easier
+> - Updated Readme.md to be more helpful and supportive (thanks for the help Timmit!)
 >
 > **Clockwork 2 Changes:**
 >
-> * fixed a missing print-hack thingy for a chain anchor mount threaded insert
+> - fixed a missing print-hack thingy for a chain anchor mount threaded insert
 
 <br>
 
@@ -465,13 +508,13 @@ As with any beta release, the provided STLs and manuals are not final, and we as
 >
 > Reprint:
 >
-> * [a]_guidler_a-beta2.stl
-> * [a]_guidler_b-beta2.stl
+> - [a]_guidler_a-beta2.stl
+> - [a]_guidler_b-beta2.stl
 >
 > Don't necessarily need to reprint:
 >
-> * main_body-beta3.stl
-> * motor_plate-beta2.stl
+> - main_body-beta3.stl
+> - motor_plate-beta2.stl
 
 ## 2021-12-29 - Made adjustments to V6/R6 Toolhead [#39](https://github.com/VoronDesign/Voron-Afterburner/pull/39)
 
