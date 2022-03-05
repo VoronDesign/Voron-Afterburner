@@ -6,6 +6,7 @@
 - [Introduction](#introduction)
 - [Filename Nomenclature](#filename-nomenclature)
 - [CHANGE LOG: *(Detailing significant changes)*](#change-log-detailing-significant-changes)
+  - [2022-03-04 - Added cable-management to ADXL sensor mounts #103](#2022-03-04---added-cable-management-to-adxl-sensor-mounts-103)
   - [2022-02-24 - CW2 Extruder Gear Mesh Adjustment Screw #100](#2022-02-24---cw2-extruder-gear-mesh-adjustment-screw-100)
   - [2022-02-18 - Clockwork 2 body and latch updates #93](#2022-02-18---clockwork-2-body-and-latch-updates-93)
   - [2022-02-14 - BMO and BMS toolhead patch #89](#2022-02-14---bmo-and-bms-toolhead-patch-89)
@@ -50,9 +51,41 @@ As with any beta release, the provided STLs and manuals are not final, and we as
 `*-cw1.stl` ->  Clockwork1 Version<br>
 `*-cw2.stl` ->  Clockwork2 Version<br>
 
+# CHANGE LOG: *(Detailing significant changes)*
+
 <br>
 
-# CHANGE LOG: *(Detailing significant changes)*
+## 2022-03-04 - Added cable-management to ADXL sensor mounts [#103](https://github.com/VoronDesign/Voron-Afterburner/pull/103)
+
+**Affected Files:**<br>
+
+\+ `/Stealthburner/Toolheads/phaetus_rapido/stealthburner_toolhead_(rapido)-front-beta5.stl`<br>
+\+ `/Stealthburner/Toolheads/revo_six_&_v6/stealthburner_toolhead_(v6_r6)-rear-cw1-beta4.stl`<br>
+\+ `/Stealthburner/Toolheads/revo_six_&_v6/stealthburner_toolhead_(v6_r6)-rear-cw2-beta4.stl`<br>
+\+ `/Stealthburner/ADXL345_Mounts/sb_adxl_mount_adafruit_19mm_c-c-beta2.stl`<br>
+\+ `/Stealthburner/ADXL345_Mounts/sb_adxl_mount_adafruit-LIS3DH-beta1.stl`<br>
+\+ `/Stealthburner/ADXL345_Mounts/sb_adxl_mount_generic_15.5mm_c-c-beta2.stl`<br>
+\+ `/Stealthburner/ADXL345_Mounts/sb_adxl_mount_ldo_15mm_c-c-beta2.stl`<br>
+\+ `/Stealthburner/ADXL345_Mounts/sb_adxl_mount_sparkfun-LIS3DH-beta1.stl`<br>
+
+\- `/Stealthburner/Toolheads/phaetus_rapido/stealthburner_toolhead_(rapido)-front-beta4.stl`<br>
+\- `/Stealthburner/Toolheads/revo_six_&_v6/stealthburner_toolhead_(v6_r6)-rear-cw1-beta3.stl`<br>
+\- `/Stealthburner/Toolheads/revo_six_&_v6/stealthburner_toolhead_(v6_r6)-rear-cw2-beta3.stl`<br>
+\- `/Stealthburner/ADXL345_Mounts/sb_adxl_mount_adafruit_19mm_c-c-beta1.stl`<br>
+\- `/Stealthburner/ADXL345_Mounts/sb_adxl_mount_adafruit-LIS3DH-beta0.stl`<br>
+\- `/Stealthburner/ADXL345_Mounts/sb_adxl_mount_generic_15.5mm_c-c-beta1.stl`<br>
+\- `/Stealthburner/ADXL345_Mounts/sb_adxl_mount_ldo_15mm_c-c-beta1.stl`<br>
+\- `/Stealthburner/ADXL345_Mounts/sb_adxl_mount_sparkfun-LIS3DH-beta0.stl`<br>
+
+> **Minor Changes**
+>
+> * Added zip-tie slot to `adxl_mount_generic`
+> * Added zip-tie slot to `adxl_mount_adafruit`
+> * Added zip-tie slot to `adxl_mount_ldo`
+> * Added zip-tie slot to `adxl_mount_sparkfun_lis3dh`
+> * Added zip-tie slot to `adxl_mount_adafruit_lis3dh`
+> * Corrected model issue on toolhead rear for `r6/v6_mount_cw1` and `r6/v6_mount_cw2` (thanks Geeter)
+> * Corrected air bleed ports on `rapido_front` toolhead (thanks FlyEspresso)
 
 <br>
 
@@ -86,8 +119,6 @@ As with any beta release, the provided STLs and manuals are not final, and we as
 >
 > - Added ADXL mount for Adafruit LIS3DH sensor
 > - Added ADXL mount for Sparkfun LIS3DH sensor
-
-
 
 ![image](https://user-images.githubusercontent.com/34219833/155484746-fd3ebe8b-fb63-4732-93e6-a2b54ff8adbc.png)
 
