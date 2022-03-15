@@ -6,6 +6,7 @@
 - [Introduction](#introduction)
 - [Filename Nomenclature](#filename-nomenclature)
 - [CHANGE LOG: *(Detailing significant changes)*](#change-log-detailing-significant-changes)
+  - [2022-03-14 - Guidler Pivot Relocation #104](#2022-03-14---guidler-pivot-relocation-104)
   - [2022-03-04 - Added cable-management to ADXL sensor mounts #103](#2022-03-04---added-cable-management-to-adxl-sensor-mounts-103)
   - [2022-02-24 - CW2 Extruder Gear Mesh Adjustment Screw #100](#2022-02-24---cw2-extruder-gear-mesh-adjustment-screw-100)
   - [2022-02-18 - Clockwork 2 body and latch updates #93](#2022-02-18---clockwork-2-body-and-latch-updates-93)
@@ -52,6 +53,44 @@ As with any beta release, the provided STLs and manuals are not final, and we as
 `*-cw2.stl` ->  Clockwork2 Version<br>
 
 # CHANGE LOG: *(Detailing significant changes)*
+
+<br>
+
+## 2022-03-14 - Guidler Pivot Relocation [#104](https://github.com/VoronDesign/Voron-Afterburner/pull/104)
+
+**Affected Files:**<br>
+
+\+ `/Clockwork2/main_body-beta9.stl`<br>
+\+ `/Clockwork2/motor_plate_beta7.stl`<br>
+\+ `/Clockwork2/[a]_guidler_a-beta6.stl`<br>
+\+ `/Clockwork2/[a]_guidler_b-beta6.stl`<br>
+\+ `/Clockwork2/[a]_latch_shuttle-beta2.stl`<br>
+\+ `/Clockwork2/[a]_latch-beta3.stl`<br>
+
+\- `/Clockwork2/main_body-beta8.stl`<br>
+\- `/Clockwork2/motor_plate_beta6.stl`<br>
+\- `/Clockwork2/[a]_guidler_a-beta5.stl`<br>
+\- `/Clockwork2/[a]_guidler_b-beta5.stl`<br>
+\- `/Clockwork2/[a]_latch_shuttle-beta1.stl`<br>
+\- `/Clockwork2/[a]_latch-beta2.stl`<br>
+\- `/Clockwork2/[a]_latch(long)-beta0.stl`<br>
+
+>In an attempt to increase tension adjustment linearity and improve the ability to print flexible materials, the guidler pivot location has been re-vised.  
+>
+>The relocation allows for the driven filament gear to travel in a large arc which reduces the amount of clearance required around the gear (less place for sneaky squishy filament to buckle and work it's way out of the filament path.  
+>
+>The pivot has also been moved to be closer to vertical with the axis of the driven gear which means that movement of the driven gear in and out (from adapting to gears of different specs) results in less vertical misalignment of the two gears which forces the filament of axis from the filament path.
+>
+>![image](https://user-images.githubusercontent.com/34219833/158295200-b345e836-578f-48de-b517-3bfa9b67ab46.png)
+>
+>![image](https://user-images.githubusercontent.com/34219833/158295254-d0bd4bdd-bfa6-4e9e-8050-3375508961e5.png)
+>
+>**Major Changes**
+>* `main body` `motor plate` `guidler a` `guidler b` and `latch shuttle` have all been extensively reworked to relocate the pivot point
+>* redesigned `latch shuttle` from scratch
+>* adjusted `main body` and `motor plate` geometry for new shuttle swing-arc
+>* revised latch shuttle orientation tab/slot on `guidler a` and `guidler b`
+>* removed original `latch` design in favor of "long" version that has been in testing for a few weeks.
 
 <br>
 
