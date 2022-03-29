@@ -6,7 +6,7 @@
 - [Introduction](#introduction)
 - [Filename Nomenclature](#filename-nomenclature)
 - [CHANGE LOG: *(Detailing significant changes)*](#change-log-detailing-significant-changes)
-  - [2022-03-28 - CW2 Holes Patched and Other Body Teaks #104](#2022-03-28---cw2-holes-patched-and-other-body-teaks-104)
+  - [2022-03-28 - CW2 Holes Patched and Other Body Tweaks #106](#2022-03-28---cw2-holes-patched-and-other-body-tweaks-106)
   - [2022-03-14 - Guidler Pivot Relocation #104](#2022-03-14---guidler-pivot-relocation-104)
   - [2022-03-04 - Added cable-management to ADXL sensor mounts #103](#2022-03-04---added-cable-management-to-adxl-sensor-mounts-103)
   - [2022-02-24 - CW2 Extruder Gear Mesh Adjustment Screw #100](#2022-02-24---cw2-extruder-gear-mesh-adjustment-screw-100)
@@ -58,7 +58,7 @@ As with any beta release, the provided STLs and manuals are not final, and we as
 <br>
 
 
-## 2022-03-28 - CW2 Holes Patched and Other Body Tweaks [#104](https://github.com/VoronDesign/Voron-Afterburner/pull/106)
+## 2022-03-28 - CW2 Holes Patched and Other Body Tweaks [#106](https://github.com/VoronDesign/Voron-Afterburner/pull/106)
 
 **Affected Files:**<br>
 
