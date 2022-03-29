@@ -6,6 +6,7 @@
 - [Introduction](#introduction)
 - [Filename Nomenclature](#filename-nomenclature)
 - [CHANGE LOG: *(Detailing significant changes)*](#change-log-detailing-significant-changes)
+  - [2022-03-28 - CW2 Holes Patched and Other Body Teaks #104](#2022-03-28---cw2-holes-patched-and-other-body-teaks-104)
   - [2022-03-14 - Guidler Pivot Relocation #104](#2022-03-14---guidler-pivot-relocation-104)
   - [2022-03-04 - Added cable-management to ADXL sensor mounts #103](#2022-03-04---added-cable-management-to-adxl-sensor-mounts-103)
   - [2022-02-24 - CW2 Extruder Gear Mesh Adjustment Screw #100](#2022-02-24---cw2-extruder-gear-mesh-adjustment-screw-100)
@@ -53,6 +54,37 @@ As with any beta release, the provided STLs and manuals are not final, and we as
 `*-cw2.stl` ->  Clockwork2 Version<br>
 
 # CHANGE LOG: *(Detailing significant changes)*
+
+<br>
+
+
+## 2022-03-28 - CW2 Holes Patched and Other Body Teaks [#104](https://github.com/VoronDesign/Voron-Afterburner/pull/106)
+
+**Affected Files:**<br>
+
+\+ `/Clockwork2/main_body-beta10.stl`<br>
+\+ `/Clockwork2/motor_plate_beta8.stl`<br>
+\+ `/Clockwork2/[a]_guidler_a-beta7.stl`<br>
+\+ `/Clockwork2/[a]_guidler_b-beta7.stl`<br>
+\+ `/Clockwork2/[a]_latch-beta4.stl`<br>
+
+\- `/Clockwork2/main_body-beta9.stl`<br>
+\- `/Clockwork2/motor_plate_beta7.stl`<br>
+\- `/Clockwork2/[a]_guidler_a-beta6.stl`<br>
+\- `/Clockwork2/[a]_guidler_b-beta6.stl`<br>
+\- `/Clockwork2/[a]_latch-beta3.stl`<br>
+
+>Repaired some issues that were brought up when "Thin Wall Detection" settings aren't used.  Ended up having to move the `latch` pivot position 0.4mm to the right in order to fix the issue.  I've also reprofiled the lower portion of CW2 to better match the toolhead portion.
+>
+>![image](https://user-images.githubusercontent.com/34219833/160529037-04c07e1b-447e-4a95-a466-712386b71fb1.png)
+>
+>![image](https://user-images.githubusercontent.com/34219833/160529048-75799658-b0ee-4371-bdc2-63b48ed2fb88.png)
+>?
+>![image](https://user-images.githubusercontent.com/34219833/160529053-d75a1951-ae04-4387-9e61-75dd48bc77d4.png)
+>
+>**Major Changes**
+>* `main body` `motor plate` `guidler a` `guidler b` and `latch` have all had work done to them.  They are *NOT* compatible with previous revisions.
+
 
 <br>
 
