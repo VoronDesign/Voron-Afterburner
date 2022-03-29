@@ -58,7 +58,7 @@ As with any beta release, the provided STLs and manuals are not final, and we as
 <br>
 
 
-## 2022-03-28 - CW2 Holes Patched and Other Body Teaks [#104](https://github.com/VoronDesign/Voron-Afterburner/pull/106)
+## 2022-03-28 - CW2 Holes Patched and Other Body Tweaks [#104](https://github.com/VoronDesign/Voron-Afterburner/pull/106)
 
 **Affected Files:**<br>
 
