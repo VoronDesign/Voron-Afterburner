@@ -132,6 +132,12 @@ As with any beta release, the provided STLs and manuals are not final, and we as
 > * Added missing hole-bridge feature in `Motor Plate`
 > * Reworked area around heatset for revised guidler pivot on `Motor Plate` to eliminate hot-goo squish-out that could catch on 50T gear.
 
+![image](https://user-images.githubusercontent.com/34219833/161367510-a0a7d586-3043-4627-8e6d-776e81126402.png)
+
+![image](https://user-images.githubusercontent.com/34219833/161367520-ebb43b14-09e5-4b88-81b7-5f60c807ef09.png)
+
+![image](https://user-images.githubusercontent.com/34219833/161367523-c52c27a1-bf11-4761-bad7-c2bb99645816.png)
+
 <br>
 
 ## 2022-03-28 - CW2 Holes Patched and Other Body Tweaks [#106](https://github.com/VoronDesign/Voron-Afterburner/pull/106)
