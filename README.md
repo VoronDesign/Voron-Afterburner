@@ -6,6 +6,7 @@
 - [Introduction](#introduction)
 - [Filename Nomenclature](#filename-nomenclature)
 - [CHANGE LOG: *(Detailing significant changes)*](#change-log-detailing-significant-changes)
+  - [2022-04-01 - Stealthburner Upgrades and Toolhead Changes #108](#2022-04-01---stealthburner-upgrades-and-toolhead-changes-108)
   - [2022-03-28 - CW2 Holes Patched and Other Body Tweaks #106](#2022-03-28---cw2-holes-patched-and-other-body-tweaks-106)
   - [2022-03-14 - Guidler Pivot Relocation #104](#2022-03-14---guidler-pivot-relocation-104)
   - [2022-03-04 - Added cable-management to ADXL sensor mounts #103](#2022-03-04---added-cable-management-to-adxl-sensor-mounts-103)
@@ -57,6 +58,87 @@ As with any beta release, the provided STLs and manuals are not final, and we as
 
 <br>
 
+## 2022-04-01 - Stealthburner Upgrades and Toolhead Changes [#108](https://github.com/VoronDesign/Voron-Afterburner/pull/108)
+
+**Affected Files:**<br>
+
+\+`Clockwork2/motor_plate-beta9.stl`<br>
+\+`Stealthburner/[a]_stealthburner_main_body_beta6.stl`<br>
+\+`Stealthburner/Toolheads/phaetus_bmo/stealthburner_toolhead_(phaetus_bmo)-front-beta4.stl`<br>
+\+`Stealthburner/Toolheads/phaetus_bmo/stealthburner_toolhead_(phaetus_bmo)-rear-cw1-beta3.stl`<br>
+\+`Stealthburner/Toolheads/phaetus_bmo/stealthburner_toolhead_(phaetus_bmo)-rear-cw2-beta3.stl`<br>
+\+`Stealthburner/Toolheads/phaetus_bms/stealthburner_toolhead_(phaetus_bms6)-front-beta4.stl`<br>
+\+`Stealthburner/Toolheads/phaetus_bms/stealthburner_toolhead_(phaetus_bms6)-rear-cw1-beta5.stl`<br>
+\+`Stealthburner/Toolheads/phaetus_bms/stealthburner_toolhead_(phaetus_bms6)-rear-cw2-beta5.stl`<br>
+\+`Stealthburner/Toolheads/phaetus_bms/stealthburner_toolhead_(phaetus_bms7)-front-beta4.stl`<br>
+\+`Stealthburner/Toolheads/phaetus_bms/stealthburner_toolhead_(phaetus_bms7)-rear-cw1-beta5.stl`<br>
+\+`Stealthburner/Toolheads/phaetus_bms/stealthburner_toolhead_(phaetus_bms7)-rear-cw2-beta5.stl`<br>
+\+`Stealthburner/Toolheads/phaetus_dragon/stealthburner_toolhead_(dragon)-front-beta4.stl`<br>
+\+`Stealthburner/Toolheads/phaetus_dragon/stealthburner_toolhead_(dragon)-rear-cw1-beta3.stl`<br>
+\+`Stealthburner/Toolheads/phaetus_dragon/stealthburner_toolhead_(dragon)-rear-cw2-beta3.stl`<br>
+\+`Stealthburner/Toolheads/phaetus_rapido/stealthburner_toolhead_(rapido)-front-beta6.stl`<br>
+\+`Stealthburner/Toolheads/phaetus_rapido/stealthburner_toolhead_(rapido)-rear-cw1-beta4.stl`<br>
+\+`Stealthburner/Toolheads/phaetus_rapido/stealthburner_toolhead_(rapido)-rear-cw2-beta4.stl`<br>
+\+`Stealthburner/Toolheads/revo_micro/stealthburner_toolhead_(revo_micro)-front-beta3.stl`<br>
+\+`Stealthburner/Toolheads/revo_micro/stealthburner_toolhead_(revo_micro)-rear-cw1-beta2.stl`<br>
+\+`Stealthburner/Toolheads/revo_micro/stealthburner_toolhead_(revo_micro)-rear-cw2-beta2.stl`<br>
+\+`Stealthburner/Toolheads/revo_six_&_v6/stealthburner_toolhead_(v6_r6)-front-beta4.stl`<br>
+\+`Stealthburner/Toolheads/revo_six_&_v6/stealthburner_toolhead_(v6_r6)-rear-cw1-beta5.stl`<br>
+\+`Stealthburner/Toolheads/revo_six_&_v6/stealthburner_toolhead_(v6_r6)-rear-cw2-beta5.stl`<br>
+\+`Stealthburner/Toolheads/revo_voron/stealthburner_toolhead_(revo_voron)-front-beta1.stl`<br>
+\+`Stealthburner/Toolheads/revo_voron/stealthburner_toolhead_(revo_voron)-rear-cw1-beta1.stl`<br>
+\+`Stealthburner/Toolheads/revo_voron/stealthburner_toolhead_(revo_voron)-rear-cw2-beta1.stl`<br>
+
+\-`Clockwork2/motor_plate-beta8.stl`<br>
+\-`Stealthburner/[a]_stealthburner_main_body_beta5.stl`<br>
+\-`Stealthburner/Toolheads/phaetus_bmo/stealthburner_toolhead_(phaetus_bmo)-front-beta3.stl`<br>
+\-`Stealthburner/Toolheads/phaetus_bmo/stealthburner_toolhead_(phaetus_bmo)-rear-cw1-beta2.stl`<br>
+\-`Stealthburner/Toolheads/phaetus_bmo/stealthburner_toolhead_(phaetus_bmo)-rear-cw2-beta2.stl`<br>
+\-`Stealthburner/Toolheads/phaetus_bms/stealthburner_toolhead_(phaetus_bms6)-front-beta3.stl`<br>
+\-`Stealthburner/Toolheads/phaetus_bms/stealthburner_toolhead_(phaetus_bms6)-rear-cw1-beta4.stl`<br>
+\-`Stealthburner/Toolheads/phaetus_bms/stealthburner_toolhead_(phaetus_bms6)-rear-cw2-beta4.stl`<br>
+\-`Stealthburner/Toolheads/phaetus_bms/stealthburner_toolhead_(phaetus_bms7)-front-beta3.stl`<br>
+\-`Stealthburner/Toolheads/phaetus_bms/stealthburner_toolhead_(phaetus_bms7)-rear-cw1-beta4.stl`<br>
+\-`Stealthburner/Toolheads/phaetus_bms/stealthburner_toolhead_(phaetus_bms7)-rear-cw2-beta4.stl`<br>
+\-`Stealthburner/Toolheads/phaetus_dragon/stealthburner_toolhead_(dragon)-front-beta3.stl`<br>
+\-`Stealthburner/Toolheads/phaetus_dragon/stealthburner_toolhead_(dragon)-rear-cw1-beta2.stl`<br>
+\-`Stealthburner/Toolheads/phaetus_dragon/stealthburner_toolhead_(dragon)-rear-cw2-beta2.stl`<br>
+\-`Stealthburner/Toolheads/phaetus_rapido/stealthburner_toolhead_(rapido)-front-beta5.stl`<br>
+\-`Stealthburner/Toolheads/phaetus_rapido/stealthburner_toolhead_(rapido)-rear-cw1-beta3.stl`<br>
+\-`Stealthburner/Toolheads/phaetus_rapido/stealthburner_toolhead_(rapido)-rear-cw2-beta3.stl`<br>
+\-`Stealthburner/Toolheads/revo_micro/stealthburner_toolhead_(revo_micro)-front-beta2.stl`<br>
+\-`Stealthburner/Toolheads/revo_micro/stealthburner_toolhead_(revo_micro)-rear-cw1-beta1.stl`<br>
+\-`Stealthburner/Toolheads/revo_micro/stealthburner_toolhead_(revo_micro)-rear-cw2-beta1.stl`<br>
+\-`Stealthburner/Toolheads/revo_six_&_v6/stealthburner_toolhead_(v6_r6)-front-beta3.stl`<br>
+\-`Stealthburner/Toolheads/revo_six_&_v6/stealthburner_toolhead_(v6_r6)-rear-cw1-beta4.stl`<br>
+\-`Stealthburner/Toolheads/revo_six_&_v6/stealthburner_toolhead_(v6_r6)-rear-cw2-beta4.stl`<br>
+\-`Stealthburner/Toolheads/revo_voron/stealthburner_toolhead_(revo_voron)-front-beta0.stl`<br>
+\-`Stealthburner/Toolheads/revo_voron/stealthburner_toolhead_(revo_voron)-rear-cw1-beta0.stl`<br>
+\-`Stealthburner/Toolheads/revo_voron/stealthburner_toolhead_(revo_voron)-rear-cw2-beta0.stl`<br>
+
+
+> This update is a lot of little QOL changes for Stealthburner and its toolheads.
+>
+> **Major Changes**
+>
+> * Beefed up the lower nozzle LED wiring retainers on `Main Body` and added a larger gap.
+> * Removed intermediate wiring retainer beside 4010 fan which was too tricky to use well.
+> * Increased the spacing between tabs on the nozzle LED wiring retainers at the top of the 4010 fan to make getting the wires in easier.
+> * Repositioned the nozzle LEDs slightly to give more clearance to toolheads.
+> * Tweaked the nozzle LED retainers slightly.
+> * Repaired issues on `Main Body` when "Thin Wall Detection" is not used.
+> * Revised 50mm bolt-extractor feature on ALL toolheads (why are there so many hotends???)
+> * Added anti-rattle feature to upper wire retainer on `Main Body`
+> * Added missing hole-bridge feature in `Motor Plate`
+> * Reworked area around heatset for revised guidler pivot on `Motor Plate` to eliminate hot-goo squish-out that could catch on 50T gear.
+
+![image](https://user-images.githubusercontent.com/34219833/161367510-a0a7d586-3043-4627-8e6d-776e81126402.png)
+
+![image](https://user-images.githubusercontent.com/34219833/161367520-ebb43b14-09e5-4b88-81b7-5f60c807ef09.png)
+
+![image](https://user-images.githubusercontent.com/34219833/161367523-c52c27a1-bf11-4761-bad7-c2bb99645816.png)
+
+<br>
 
 ## 2022-03-28 - CW2 Holes Patched and Other Body Tweaks [#106](https://github.com/VoronDesign/Voron-Afterburner/pull/106)
 
@@ -74,17 +156,17 @@ As with any beta release, the provided STLs and manuals are not final, and we as
 \- `/Clockwork2/[a]_guidler_b-beta6.stl`<br>
 \- `/Clockwork2/[a]_latch-beta3.stl`<br>
 
->Repaired some issues that were brought up when "Thin Wall Detection" settings aren't used.  Ended up having to move the `latch` pivot position 0.4mm to the right in order to fix the issue.  I've also reprofiled the lower portion of CW2 to better match the toolhead portion.
+> Repaired some issues that were brought up when "Thin Wall Detection" settings aren't used.  Ended up having to move the `latch` pivot position 0.4mm to the right in order to fix the issue.  I've also reprofiled the lower portion of CW2 to better match the toolhead portion.
 >
->![image](https://user-images.githubusercontent.com/34219833/160529037-04c07e1b-447e-4a95-a466-712386b71fb1.png)
+> ![image](https://user-images.githubusercontent.com/34219833/160529037-04c07e1b-447e-4a95-a466-712386b71fb1.png)
 >
->![image](https://user-images.githubusercontent.com/34219833/160529048-75799658-b0ee-4371-bdc2-63b48ed2fb88.png)
->?
->![image](https://user-images.githubusercontent.com/34219833/160529053-d75a1951-ae04-4387-9e61-75dd48bc77d4.png)
+> ![image](https://user-images.githubusercontent.com/34219833/160529048-75799658-b0ee-4371-bdc2-63b48ed2fb88.png)
+> ?
+> ![image](https://user-images.githubusercontent.com/34219833/160529053-d75a1951-ae04-4387-9e61-75dd48bc77d4.png)
 >
->**Major Changes**
->* `main body` `motor plate` `guidler a` `guidler b` and `latch` have all had work done to them.  They are *NOT* compatible with previous revisions.
-
+> **Major Changes**
+>
+> * `main body` `motor plate` `guidler a` `guidler b` and `latch` have all had work done to them.  They are *NOT* compatible with previous revisions.
 
 <br>
 
@@ -107,22 +189,23 @@ As with any beta release, the provided STLs and manuals are not final, and we as
 \- `/Clockwork2/[a]_latch-beta2.stl`<br>
 \- `/Clockwork2/[a]_latch(long)-beta0.stl`<br>
 
->In an attempt to increase tension adjustment linearity and improve the ability to print flexible materials, the guidler pivot location has been re-vised.  
+> In an attempt to increase tension adjustment linearity and improve the ability to print flexible materials, the guidler pivot location has been re-vised.
 >
->The relocation allows for the driven filament gear to travel in a large arc which reduces the amount of clearance required around the gear (less place for sneaky squishy filament to buckle and work it's way out of the filament path.  
+> The relocation allows for the driven filament gear to travel in a large arc which reduces the amount of clearance required around the gear (less place for sneaky squishy filament to buckle and work it's way out of the filament path.
 >
->The pivot has also been moved to be closer to vertical with the axis of the driven gear which means that movement of the driven gear in and out (from adapting to gears of different specs) results in less vertical misalignment of the two gears which forces the filament of axis from the filament path.
+> The pivot has also been moved to be closer to vertical with the axis of the driven gear which means that movement of the driven gear in and out (from adapting to gears of different specs) results in less vertical misalignment of the two gears which forces the filament of axis from the filament path.
 >
->![image](https://user-images.githubusercontent.com/34219833/158295200-b345e836-578f-48de-b517-3bfa9b67ab46.png)
+> ![image](https://user-images.githubusercontent.com/34219833/158295200-b345e836-578f-48de-b517-3bfa9b67ab46.png)
 >
->![image](https://user-images.githubusercontent.com/34219833/158295254-d0bd4bdd-bfa6-4e9e-8050-3375508961e5.png)
+> ![image](https://user-images.githubusercontent.com/34219833/158295254-d0bd4bdd-bfa6-4e9e-8050-3375508961e5.png)
 >
->**Major Changes**
->* `main body` `motor plate` `guidler a` `guidler b` and `latch shuttle` have all been extensively reworked to relocate the pivot point
->* redesigned `latch shuttle` from scratch
->* adjusted `main body` and `motor plate` geometry for new shuttle swing-arc
->* revised latch shuttle orientation tab/slot on `guidler a` and `guidler b`
->* removed original `latch` design in favor of "long" version that has been in testing for a few weeks.
+> **Major Changes**
+>
+> * `main body` `motor plate` `guidler a` `guidler b` and `latch shuttle` have all been extensively reworked to relocate the pivot point
+> * redesigned `latch shuttle` from scratch
+> * adjusted `main body` and `motor plate` geometry for new shuttle swing-arc
+> * revised latch shuttle orientation tab/slot on `guidler a` and `guidler b`
+> * removed original `latch` design in favor of "long" version that has been in testing for a few weeks.
 
 <br>
 
