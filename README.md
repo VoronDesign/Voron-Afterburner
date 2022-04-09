@@ -130,7 +130,7 @@ As with any beta release, the provided STLs and manuals are not final, and we as
 > * Added zip-tie slots to all `Cable Chain Anchor` parts
 > * Slightly revised the shape of 50mm bolt extraction feature on all `Toohead Rear`
 > * Fixed hole size for 2 heatsets in `Dragon Toolhead Front`
-> 
+
 
 ![image1](https://user-images.githubusercontent.com/34219833/162587749-2e3d525c-64d0-4e06-9c35-b74813c168c5.png)
 
