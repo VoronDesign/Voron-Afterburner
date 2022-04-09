@@ -6,7 +6,8 @@
 - [Introduction](#introduction)
 - [Filename Nomenclature](#filename-nomenclature)
 - [CHANGE LOG: *(Detailing significant changes)*](#change-log-detailing-significant-changes)
-  - [2022-04-01 - Stealthburner Upgrades and Toolhead Changes #108](#2022-04-01---stealthburner-upgrades-and-toolhead-changes-108)
+  - [2022-04-09 - Stealthburner Toolhead updates and CW2 Bells and Whistles #110](#2022-04-09---stealthburner-toolhead-updates-and-cw2-bells-and-whistles-110)
+  - [2022-04-01 - Stealthburner Upgrades and Toolhead Changes #109](#2022-04-01---stealthburner-upgrades-and-toolhead-changes-109)
   - [2022-03-28 - CW2 Holes Patched and Other Body Tweaks #106](#2022-03-28---cw2-holes-patched-and-other-body-tweaks-106)
   - [2022-03-14 - Guidler Pivot Relocation #104](#2022-03-14---guidler-pivot-relocation-104)
   - [2022-03-04 - Added cable-management to ADXL sensor mounts #103](#2022-03-04---added-cable-management-to-adxl-sensor-mounts-103)
@@ -58,7 +59,94 @@ As with any beta release, the provided STLs and manuals are not final, and we as
 
 <br>
 
-## 2022-04-01 - Stealthburner Upgrades and Toolhead Changes [#108](https://github.com/VoronDesign/Voron-Afterburner/pull/108)
+## 2022-04-09 - Stealthburner Toolhead updates and CW2 Bells and Whistles [#110](https://github.com/VoronDesign/Voron-Afterburner/pull/110)
+
+**Affected Files:**<br>
+
+\+`Clockwork2/cable_door-beta2.stl`<br>
+\+`Clockwork2/chain_anchor_2hole-beta2.stl`<br>
+\+`Clockwork2/chain_anchor_2hole-SW-beta1.stl`<br>
+\+`Clockwork2/chain_anchor_3hole-beta2.stl`<br>
+\+`Clockwork2/chain_anchor_3hole-SW-beta1.stl`<br>
+\+`Clockwork2/main_body-beta11.stl`<br>
+\+`Clockwork2/motor_plate-beta10.stl`<br>
+\+`Stealthburner/[a]_stealthburner_main_body_beta7.stl`<br>
+\+`Stealthburner/Toolheads/phaetus_bmo/stealthburner_toolhead_(phaetus_bmo)-rear-cw1-beta4.stl`<br>
+\+`Stealthburner/Toolheads/phaetus_bmo/stealthburner_toolhead_(phaetus_bmo)-rear-cw2-beta4.stl`<br>
+\+`Stealthburner/Toolheads/phaetus_bms/stealthburner_toolhead_(phaetus_bms6)-rear-cw1-beta6.stl`<br>
+\+`Stealthburner/Toolheads/phaetus_bms/stealthburner_toolhead_(phaetus_bms6)-rear-cw2-beta6.stl`<br>
+\+`Stealthburner/Toolheads/phaetus_bms/stealthburner_toolhead_(phaetus_bms7)-rear-cw1-beta6.stl`<br>
+\+`Stealthburner/Toolheads/phaetus_bms/stealthburner_toolhead_(phaetus_bms7)-rear-cw2-beta6.stl`<br>
+\+`Stealthburner/Toolheads/phaetus_dragon/stealthburner_toolhead_(dragon)-front-beta5.stl`<br>
+\+`Stealthburner/Toolheads/phaetus_dragon/stealthburner_toolhead_(dragon)-rear-cw1-beta4.stl`<br>
+\+`Stealthburner/Toolheads/phaetus_dragon/stealthburner_toolhead_(dragon)-rear-cw2-beta4.stl`<br>
+\+`Stealthburner/Toolheads/phaetus_rapido/stealthburner_toolhead_(rapido)-rear-cw1-beta5.stl`<br>
+\+`Stealthburner/Toolheads/phaetus_rapido/stealthburner_toolhead_(rapido)-rear-cw2-beta5.stl`<br>
+\+`Stealthburner/Toolheads/revo_micro/stealthburner_toolhead_(revo_micro)-rear-cw1-beta3.stl`<br>
+\+`Stealthburner/Toolheads/revo_micro/stealthburner_toolhead_(revo_micro)-rear-cw2-beta3.stl`<br>
+\+`Stealthburner/Toolheads/revo_six_&_v6/stealthburner_toolhead_(v6_r6)-rear-cw1-beta6.stl`<br>
+\+`Stealthburner/Toolheads/revo_six_&_v6/stealthburner_toolhead_(v6_r6)-rear-cw2-beta6.stl`<br>
+\+`Stealthburner/Toolheads/revo_voron/stealthburner_toolhead_(revo_voron)-front-beta2.stl`<br>
+\+`Stealthburner/Toolheads/revo_voron/stealthburner_toolhead_(revo_voron)-rear-cw1-beta2.stl`<br>
+\+`Stealthburner/Toolheads/revo_voron/stealthburner_toolhead_(revo_voron)-rear-cw2-beta2.stl`<br>
+
+
+\-`Clockwork2/cable_door-beta1.stl`<br>
+\-`Clockwork2/chain_anchor_2hole-beta1.stl`<br>
+\-`Clockwork2/chain_anchor_2hole-SW-beta0.stl`<br>
+\-`Clockwork2/chain_anchor_3hole-beta1.stl`<br>
+\-`Clockwork2/chain_anchor_3hole-SW-beta0.stl`<br>
+\-`Clockwork2/main_body-beta10.stl`<br>
+\-`Clockwork2/motor_plate-beta9.stl`<br>
+\-`Stealthburner/[a]_stealthburner_main_body_beta6.stl`<br>
+\-`Stealthburner/Toolheads/phaetus_bmo/stealthburner_toolhead_(phaetus_bmo)-rear-cw1-beta3.stl`<br>
+\-`Stealthburner/Toolheads/phaetus_bmo/stealthburner_toolhead_(phaetus_bmo)-rear-cw2-beta3.stl`<br>
+\-`Stealthburner/Toolheads/phaetus_bms/stealthburner_toolhead_(phaetus_bms6)-rear-cw1-beta5.stl`<br>
+\-`Stealthburner/Toolheads/phaetus_bms/stealthburner_toolhead_(phaetus_bms6)-rear-cw2-beta5.stl`<br>
+\-`Stealthburner/Toolheads/phaetus_bms/stealthburner_toolhead_(phaetus_bms7)-rear-cw1-beta5.stl`<br>
+\-`Stealthburner/Toolheads/phaetus_bms/stealthburner_toolhead_(phaetus_bms7)-rear-cw2-beta5.stl`<br>
+\-`Stealthburner/Toolheads/phaetus_dragon/stealthburner_toolhead_(dragon)-front-beta4.stl`<br>
+\-`Stealthburner/Toolheads/phaetus_dragon/stealthburner_toolhead_(dragon)-rear-cw1-beta3.stl`<br>
+\-`Stealthburner/Toolheads/phaetus_dragon/stealthburner_toolhead_(dragon)-rear-cw2-beta3.stl`<br>
+\-`Stealthburner/Toolheads/phaetus_rapido/stealthburner_toolhead_(rapido)-rear-cw1-beta4.stl`<br>
+\-`Stealthburner/Toolheads/phaetus_rapido/stealthburner_toolhead_(rapido)-rear-cw2-beta4.stl`<br>
+\-`Stealthburner/Toolheads/revo_micro/stealthburner_toolhead_(revo_micro)-rear-cw1-beta2.stl`<br>
+\-`Stealthburner/Toolheads/revo_micro/stealthburner_toolhead_(revo_micro)-rear-cw2-beta2.stl`<br>
+\-`Stealthburner/Toolheads/revo_six_&_v6/stealthburner_toolhead_(v6_r6)-rear-cw1-beta5.stl`<br>
+\-`Stealthburner/Toolheads/revo_six_&_v6/stealthburner_toolhead_(v6_r6)-rear-cw2-beta5.stl`<br>
+\-`Stealthburner/Toolheads/revo_voron/stealthburner_toolhead_(revo_voron)-front-beta1.stl`<br>
+\-`Stealthburner/Toolheads/revo_voron/stealthburner_toolhead_(revo_voron)-rear-cw1-beta1.stl`<br>
+\-`Stealthburner/Toolheads/revo_voron/stealthburner_toolhead_(revo_voron)-rear-cw2-beta1.stl`<br>
+
+
+> **Major Changes**
+>
+> * Fixed thin-wall issue on Stealthburner 'Main Body' lower mounting holes (Thanks str1pes!)
+> * Added a straight bridging feature to the 5015 fan retainer spring on `Main Body` to improve printability
+> * Revised `Cable Cover` to have more material around the pivot bolt to prevent cracking
+> * Made `Cable Cover` pivot bolt hole 1mm deeper to give more clearance for pivot bolt
+> * Added additional material to mounting bolt location of `Cable Cover` to reduce cracking
+> * Removed material on `Motor Plate` to accomodate for `Cable Cover` additional thickness
+> * Added zip-tie slots to all `Cable Chain Anchor` parts
+> * Slightly revised the shape of 50mm bolt extraction feature on all `Toohead Rear`
+> * Fixed hole size for 2 heatsets in `Dragon Toolhead Front`
+
+
+![image1](https://user-images.githubusercontent.com/34219833/162587749-2e3d525c-64d0-4e06-9c35-b74813c168c5.png)
+
+![image2](https://user-images.githubusercontent.com/34219833/162587750-4d22b514-9211-4a3a-be4e-86990780bb2d.png)
+
+![image3](https://user-images.githubusercontent.com/34219833/162587754-4a28b10b-25d2-429c-908a-8d10f8db2fd2.png)
+
+![image4](https://user-images.githubusercontent.com/34219833/162587756-af11ec2e-5a64-4a1d-bbe0-8581b3ccd3a4.png)
+
+![image5](https://user-images.githubusercontent.com/34219833/162587763-eedce323-635d-41aa-8fc5-bf288725c29a.png)
+
+
+<br>
+
+
+## 2022-04-01 - Stealthburner Upgrades and Toolhead Changes [#109](https://github.com/VoronDesign/Voron-Afterburner/pull/109)
 
 **Affected Files:**<br>
 
