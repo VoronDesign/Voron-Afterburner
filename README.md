@@ -6,7 +6,7 @@
 - [Introduction](#introduction)
 - [Filename Nomenclature](#filename-nomenclature)
 - [CHANGE LOG: *(Detailing significant changes)*](#change-log-detailing-significant-changes)
-  - [2022-04-09 - Stealthburner Toolhead updates and CW2 Bells and Whistles #112(#2022-04-09---stealthburner-toolhead-updates-and-cw2-bells-and-whistles-112)
+  - [2022-04-09 - Stealthburner Toolhead updates and CW2 Bells and Whistles #112](#2022-04-09---stealthburner-toolhead-updates-and-cw2-bells-and-whistles-112)
   - [2022-04-01 - Stealthburner Upgrades and Toolhead Changes #109](#2022-04-01---stealthburner-upgrades-and-toolhead-changes-109)
   - [2022-03-28 - CW2 Holes Patched and Other Body Tweaks #106](#2022-03-28---cw2-holes-patched-and-other-body-tweaks-106)
   - [2022-03-14 - Guidler Pivot Relocation #104](#2022-03-14---guidler-pivot-relocation-104)
