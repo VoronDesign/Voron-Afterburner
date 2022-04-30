@@ -1,5 +1,6 @@
 Category,Description,Qty,Notes
 Fasteners,M3x50 SHCS,2,
+,M3x40 SHCS,3, for x_frame_SW
 ,M3x30 SHCS,3,
 ,M3x25 SHCS,7,
 ,M3x20 SHCS,2,
@@ -8,7 +9,7 @@ Fasteners,M3x50 SHCS,2,
 ,M3x8 SHCS,2,
 ,M3x6 BHCS,1,
 ,M3x6 FHCS,2,
-,M3 Hexnut,2,
+,M3 Hexnut,2, add 1 if sw  
 ,Bondtech BMG Extruder Kit,1,
 ,M3 Brass heatstake inserts - short M3x5x4,22,
 Misc,3x6mm Magnet,1, for Hall Effect endstops
